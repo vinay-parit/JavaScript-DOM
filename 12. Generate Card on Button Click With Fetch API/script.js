@@ -1,35 +1,27 @@
-// DEVELOPER PROBLEMS
-
-// 1. Debugging a TypeError: Cannot read property 'X' of undefined:
-var obj = {};
-obj?.name?.first; // conditional chaining
-
-//2.  Handling Asynchronous Operations
-
-let getUser = document.querySelector("#getUser");
-
-getUser.addEventListener("click", function () {
-  getNewUser();
-});
-
-function getNewUser() {
-  fetch(`https://randomuser.me/api/`)
-    .then((raw) => raw.json())
-    .then((result) => {
-      const { name, email, gender, picture } = result.results[0];
-      document.querySelector(
-        "#parent"
-      ).innerHTML += `<div class="card w-60 p-4 rounded-md bg-zinc-700">
-<div class="w-20 h-20 bg-zinc-500 rounded-2xl mb-3 overflow-hidden">
-      <img src="${picture.large}" class="w-full h-full fit-cover">
-</div>
-<h3 class="font-semibold text-2xl">${name.first}</h3>
-<h5 class="text-sm font-semibold opacity-40">${gender}</h5>
-<h6 class="text-sm opacity-40">${email}</h6>
-<p class="mt-5 text-xs font-semibold opacity-80">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, odio
-  ex pariatur nisi necessitatibus facere.
-</p>
-</div>`;
+let getUser = document.querySelector(".get-user");
+let parent = document.querySelector(".parent");
+getUser.addEventListener("click", () => {
+  fetch("https://randomuser.me/api/")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.results[0].name.first);
+      parent.innerHTML += `<div class="box h-[400px] border-2 w-[350px] rounded-xl m-5 text-center">
+        <h2 class="p-3 font-bold">${data.results[0].name.first}</h2>
+        <img
+          class="pl-7 pr-7 h-[200px] w-[350px]"
+          src=${data.results[0].picture.large}
+          alt="vinay-begar"
+        />
+        <p class="font-bold p-4">
+          email: <span class="font-extralight"> ${data.results[0].email}</span>
+        </p>
+        <p class="font-bold">
+          address:
+          <span class="font-extralight"
+            >${data.results[0].location.street.name} ${data.results[0].location.city}<br />
+            ${data.results[0].location.state}${data.results[0].location.country}${data.results[0].location.postcode}</span
+          >
+        </p>
+      </div>`;
     });
-}
+});
