@@ -32,18 +32,18 @@
 
 // select multiple elements
 
-function highlightItems() {
-  const items = document.querySelectorAll(".item");
-  console.log(items);
+// function highlightItems() {
+//   const items = document.querySelectorAll(".item");
+//   console.log(items);
 
-  // Using forEach
-  items.forEach((item, index) => {
-    item.style.backgroundColor = "yellow";
-    item.style.fontWeight = "bold";
-    item.style.fontSize = "20px"
-    item.textContent += ` (Highlighted ${index + 1})`;
-  });
-}
+//   // Using forEach
+//   items.forEach((item, index) => {
+//     item.style.backgroundColor = "yellow";
+//     item.style.fontWeight = "bold";
+//     item.style.fontSize = "20px"
+//     item.textContent += ` (Highlighted ${index + 1})`;
+//   });
+// }
 
 let h3 = document.querySelectorAll("h3");
 
