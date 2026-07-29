@@ -45,117 +45,117 @@
 //   });
 // }
 
-let h3 = document.querySelectorAll("h3");
+// let h3 = document.querySelectorAll("h3");
 
-function change() {
-  h3.forEach((item, index) => {
-    if (index > 2) {
-      item.textContent += " Google";
-    }
-  });
-}
+// function change() {
+//   h3.forEach((item, index) => {
+//     if (index > 2) {
+//       item.textContent += " Google";
+//     }
+//   });
+// }
 
-function updateHTML() {
-    const container = document.getElementById("container");
+// function updateHTML() {
+//     const container = document.getElementById("container");
 
-    // Get current HTML
-    console.log(container.innerHTML); // "<p>Original content</p>"
+//     // Get current HTML
+//     console.log(container.innerHTML); // "<p>Original content</p>"
 
-    // Set new HTML content
-    container.innerHTML = `
-        <h2>New Title</h2>
-        <p>This is <strong>bold</strong> text</p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-        </ul>
-    `;
-}
+//     // Set new HTML content
+//     container.innerHTML = `
+//         <h2>New Title</h2>
+//         <p>This is <strong>bold</strong> text</p>
+//         <ul>
+//             <li>Item 1</li>
+//             <li>Item 2</li>
+//         </ul>
+//     `;
+// }
 
-function toggleStyles() {
-  const div = document.getElementById("myDiv");
+// function toggleStyles() {
+//   const div = document.getElementById("myDiv");
 
-  // Toggle multiple classes
-  div.classList.toggle("highlight");
-  div.classList.toggle("large-text");
+//   // Toggle multiple classes
+//   div.classList.toggle("highlight");
+//   div.classList.toggle("large-text");
 
-  // Check if class exists
-  if (div.classList.contains("highlight")) {
-    console.log("Element is highlighted!");
-  }
+//   // Check if class exists
+//   if (div.classList.contains("highlight")) {
+//     console.log("Element is highlighted!");
+//   }
 
-  // Add class conditionally
-  if (div.textContent.includes("Click")) {
-    div.classList.add("interactive");
-  }
-}
+//   // Add class conditionally
+//   if (div.textContent.includes("Click")) {
+//     div.classList.add("interactive");
+//   }
+// }
 
-function changePara(){
-  let ready = document.querySelector(".ready");
-  console.log(ready);
+// function changePara(){
+//   let ready = document.querySelector(".ready");
+//   console.log(ready);
 
-  //element.classList.add("className");
-//   ready.classList.add("highlight")
-//   ready.classList.remove("ready");
+//   //element.classList.add("className");
+// //   ready.classList.add("highlight")
+// //   ready.classList.remove("ready");
 
-    // ready.classList.toggle('highlight')
-    ready.classList.replace("ready", "highlight");
+//     // ready.classList.toggle('highlight')
+//     ready.classList.replace("ready", "highlight");
 
-}
+// }
 
-let parent = document.querySelector(".parent");
+// let parent = document.querySelector(".parent");
 
-const h1 = document.createElement("h1");
-h1.textContent = "Vinay.JavaScript";
-parent.appendChild(h1);
+// const h1 = document.createElement("h1");
+// h1.textContent = "Vinay.JavaScript";
+// parent.appendChild(h1);
 
-JavaScript
-function addElements() {
-    const container = document.getElementById("container");
+// JavaScript
+// function addElements() {
+//     const container = document.getElementById("container");
 
-    // Method 1: innerHTML
-    container.innerHTML += "<p>Added with innerHTML</p>";
+//     // Method 1: innerHTML
+//     container.innerHTML += "<p>Added with innerHTML</p>";
 
-    // Method 2: createElement
-    const newDiv = document.createElement("div");
-    newDiv.textContent = "Added with createElement";
-    newDiv.style.color = "blue";
-    container.appendChild(newDiv);
+//     // Method 2: createElement
+//     const newDiv = document.createElement("div");
+//     newDiv.textContent = "Added with createElement";
+//     newDiv.style.color = "blue";
+//     container.appendChild(newDiv);
 
-    // Method 3: insertAdjacentHTML
-    container.insertAdjacentHTML("beforeend", "<span>Added with insertAdjacentHTML</span>");
-}
+//     // Method 3: insertAdjacentHTML
+//     container.insertAdjacentHTML("beforeend", "<span>Added with insertAdjacentHTML</span>");
+// }
 
-function addTodo() {
-  const input = document.getElementById("todoInput");
-  const todoList = document.getElementById("todoList");
+// function addTodo() {
+//   const input = document.getElementById("todoInput");
+//   const todoList = document.getElementById("todoList");
     
-  if (input.value.trim() === "") return;
+//   if (input.value.trim() === "") return;
 
-  // Create new todo item
-  const todoItem = document.createElement("div");
-  todoItem.className = "todo-item";
-  todoItem.style.padding = "10px";
-  todoItem.style.border = "1px solid #ccc";
-  todoItem.style.margin = "5px 0";
+//   // Create new todo item
+//   const todoItem = document.createElement("div");
+//   todoItem.className = "todo-item";
+//   todoItem.style.padding = "10px";
+//   todoItem.style.border = "1px solid #ccc";
+//   todoItem.style.margin = "5px 0";
 
-  // Create text span
-  const todoText = document.createElement("span");
-  todoText.textContent = input.value;
+//   // Create text span
+//   const todoText = document.createElement("span");
+//   todoText.textContent = input.value;
 
-  // Create delete button
-  const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "Delete";
-  deleteBtn.onclick = () => todoItem.remove();
+//   // Create delete button
+//   const deleteBtn = document.createElement("button");
+//   deleteBtn.textContent = "Delete";
+//   deleteBtn.onclick = () => todoItem.remove();
 
-  // Assemble todo item
-  todoItem.appendChild(todoText);
-  todoItem.appendChild(deleteBtn);
-  todoList.appendChild(todoItem);
+//   // Assemble todo item
+//   todoItem.appendChild(todoText);
+//   todoItem.appendChild(deleteBtn);
+//   todoList.appendChild(todoItem);
 
-  // Clear input
-  input.value = "";
-}
+//   // Clear input
+//   input.value = "";
+// }
 
 
 function insertContent() {
