@@ -14,21 +14,21 @@
 // console.log(obj);
 
 // get and set attributes
-function updateImage() {
-  const img = document.getElementById("myImage");
+// function updateImage() {
+//   const img = document.getElementById("myImage");
 
-  // Get current attributes
-  console.log(img.getAttribute("src")); // "old-image.jpg"
-  console.log(img.getAttribute("data-category")); // "nature"
+//   // Get current attributes
+//   console.log(img.getAttribute("src")); // "old-image.jpg"
+//   console.log(img.getAttribute("data-category")); // "nature"
 
-  // Set new attributes
-  img.setAttribute(
-    "src",
-    "https://images.unsplash.com/photo-1754244774221-cc8fcd5d0dcd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  );
-  img.setAttribute("alt", "New Image");
-  img.setAttribute("data-category", "landscape");
-}
+//   // Set new attributes
+//   img.setAttribute(
+//     "src",
+//     "https://images.unsplash.com/photo-1754244774221-cc8fcd5d0dcd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//   );
+//   img.setAttribute("alt", "New Image");
+//   img.setAttribute("data-category", "landscape");
+// }
 
 // select multiple elements
 
