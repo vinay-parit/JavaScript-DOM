@@ -11,6 +11,8 @@ form.addEventListener("submit", function(dets){
   let emailans = emailRegex.test(email.value)
   let passwordans = emailRegex.test(password.value);
 
-  
+  if (!emailans) {
+    document.querySelector("#emailError").textContent = "Email is incorrect"
+  }
 
 })
