@@ -13,20 +13,25 @@ form.addEventListener("submit", function(dets){
   const passRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]).{8,}$/;
 
+    let isValid = true
+
   let emailans = emailRegex.test(email.value)
   let passwordans = emailRegex.test(password.value);
 
   if (!emailans) {
     document.querySelector("#emailError").textContent = "Email is incorrect"
     document.querySelector("#emailError").style.display = "initial";
-
-
+    isValid = false
   }
 
   if (!passwordans) {
     document.querySelector("#passwordError").textContent = "Password is incorrect";
     document.querySelector("#passwordError").style.display = "initial";
+    isValid = false;
+  }
 
+  if(isValid){
+    document.querySelector("#resultMsg").textContent = "Everything is Correct"
   }
 
 })
