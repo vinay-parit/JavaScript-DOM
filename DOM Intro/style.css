@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background-color: linear-gradient(135deg, #4facfe, #00f2fe);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -85,3 +85,8 @@ button:hover {
 /* .error {
     color: #dc3545;
 } */
+
+#resultMsg{
+    text-align: center;
+    padding-top: 10px;
+}
