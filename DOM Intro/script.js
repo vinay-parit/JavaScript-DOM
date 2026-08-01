@@ -15,4 +15,8 @@ form.addEventListener("submit", function(dets){
     document.querySelector("#emailError").textContent = "Email is incorrect"
   }
 
+  if (!passwordans) {
+    document.querySelector("#passwordError").textContent = "Password is incorrect";
+  }
+
 })
