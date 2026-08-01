@@ -7,4 +7,10 @@ form.addEventListener("submit", function(dets){
 
   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
   const passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&^#()_+\-=\[\]{};':"\\|,.<>\/~`])[A-Za-z\d@$!%*?&^#()_+\-=\[\]{};':"\\|,.<>\/~`]{8,}$/
+
+  let emailans = emailRegex.test(email.value)
+  let passwordans = emailRegex.test(password.value);
+
+  
+
 })
