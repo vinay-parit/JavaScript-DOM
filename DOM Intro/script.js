@@ -19,7 +19,7 @@ form.addEventListener("submit", function(dets){
 
   if (!emailans) {
     document.querySelector("#emailError").textContent = "Email is incorrect";
-    document.querySelector("#emailError").style.display = "initial";
+    document.querySelector("#emailError").style.display = "block";
     isValid = false;
   }
 
