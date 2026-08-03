@@ -14,13 +14,13 @@ form.addEventListener("submit", function(dets){
 
   let isValid = true;
 
-  let emailans = emailRegex.test(email.value)
+  let emailans = emailRegex.test(email.value);
   let passwordans = passRegex.test(password.value);
 
   if (!emailans) {
     document.querySelector("#emailError").textContent = "Email is incorrect";
     document.querySelector("#emailError").style.display = "initial";
-    isValid = false;
+    isValid = true;
   }
 
   if (!passwordans) {
