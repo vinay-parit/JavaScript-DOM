@@ -14,7 +14,7 @@ form.addEventListener("submit", function(dets){
 
   let isValid = true;
 
-  let emailans = emailRegex.test(email.value);
+  let emailans = emailRegex.test(email.value)
   let passwordans = passRegex.test(password.value);
 
   if (!emailans) {
