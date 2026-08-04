@@ -31,7 +31,7 @@ form.addEventListener("submit", function(dets){
   }
 
   if (isValid) {
-    document.querySelector("#resultMsg").textContent = "Everything is Correct";
+    document.querySelector("#resultMsg").textContent = "Everything is Correct...";
     document.querySelector("body").style.background = "green";
   }
 })
