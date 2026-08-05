@@ -30,7 +30,7 @@ form.addEventListener("submit", function(dets){
     isValid = false;
   }
 
-  if (isValid) {
+  if (!isValid) {
     document.querySelector("#resultMsg").textContent = "Everything is Correct";
     document.querySelector("body").style.background = "yellow";
   }
