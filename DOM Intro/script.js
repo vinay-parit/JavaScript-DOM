@@ -3,6 +3,7 @@ let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 
 form.addEventListener("submit", function(dets){
+  dets.preventDefault();
 
   document.querySelector("#emailError").textContent = "";
   document.querySelector("#passwordError").textContent = "";
