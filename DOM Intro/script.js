@@ -24,7 +24,8 @@ form.addEventListener("submit", function(dets){
   }
 
   if (!passwordans) {
-    document.querySelector("#passwordError").textContent = "Incorrect Password";
+    document.querySelector("#passwordError").textContent =
+      "Password is incorrect";
     document.querySelector("#passwordError").style.display = "initial";
     isValid = false;
   }
