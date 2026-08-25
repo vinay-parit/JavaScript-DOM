@@ -12,7 +12,7 @@ form.addEventListener("submit", function(dets){
   const passRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]).{8,}$/;
 
-  let isValid = false;
+  let isValid = true;
 
   let emailans = emailRegex.test(email.value);
   let passwordans = passRegex.test(password.value);
