@@ -82,9 +82,9 @@ button:hover {
     border-color: #28a745;
 }
 
-.error {
+/* .error {
     color: #dc3545;
-}
+} */
 
 #resultMsg{
     text-align: center;
