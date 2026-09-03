@@ -1,27 +1,37 @@
-//Browers provides us some of the features to use in JavaScript. by using those features we can change the elements in the browser.
+let form = document.querySelector("form")
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
 
-// console.log(console);
-// console.log("Hello");
-// console.warn("Warn");
-// console.error("error");
+form.addEventListener("submit", function(dets){
+  dets.preventDefault();
 
-//Jabhi bhi ham log browser ka kuch bhi access karte hai toh usko DOM manipulation bolte hai
+  document.querySelector("#emailError").textContent = "";
+  document.querySelector("#passwordError").textContent = "";
 
-//Introduction To DOM
-// console.log(document.body);
+  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  const passRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]).{8,}$/;
 
-// let obj={
-//     name:"Vinay B.",
-//     college:"vsit",
-//     gf:true
-// }
-// console.log(obj.gf);
+  let isValid = true;
 
-//Accessing the Elements of DOM
-// let h2 = document.querySelector("h2")
-// let btn = document.querySelector(".btn")
+  let emailans = emailRegex.test(email.value);
+  let passwordans = passRegex.test(password.value);
 
-// btn.addEventListener("mouseout",()=>{
-//     h2.innerHTML="Vinay B."
-// })
+  if (!emailans) {
+    document.querySelector("#emailError").textContent = "Email is incorrect";
+    document.querySelector("#emailError").style.display = "initial";
+    isValid = false;
+  }
 
+  if (!passwordans) {
+    document.querySelector("#passwordError").textContent =
+      "Password is incorrect";
+    document.querySelector("#passwordError").style.display = "initial";
+    isValid = false;
+  }
+
+  if (isValid) {
+    document.querySelector("#resultMsg").textContent = "Everything is Correct";
+    document.querySelector("body").style.background = "yellow";
+  }
+})
