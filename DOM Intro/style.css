@@ -66,8 +66,7 @@ button {
     padding: 12px;
     border: none;
     background: #4facfe;
-    /* color: white; */
-    color: tomato;;
+    color: white;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
