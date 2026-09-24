@@ -14,3 +14,10 @@
 // h1.textContent = "Hi from vinay"
 
 // document.querySelector("body").append(h1)
+
+let lis = document.querySelectorAll("li")
+
+lis.forEach(val => {
+    console.log(val.textContent);
+    
+});
