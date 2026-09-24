@@ -1,37 +1,16 @@
-let form = document.querySelector("form")
-let email = document.querySelector("#email");
-let password = document.querySelector("#password");
+let a = document.querySelector("a")
+a.style.textDecoration = "none"
+a.style.color = "red"
 
-form.addEventListener("submit", function(dets){
-  dets.preventDefault();
+a.setAttribute(
+  "href",
+  "https://images.unsplash.com/photo-1790122387967-ffecd6ab8e8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
+);
 
-  document.querySelector("#emailError").textContent = "";
-  document.querySelector("#passwordError").textContent = "";
+a.removeAttribute("href")
 
-  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-  const passRegex =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]).{8,}$/;
 
-  let isValid = true;
+let h1 = document.createElement("h1");
+h1.textContent = "Hi from vinay"
 
-  let emailans = emailRegex.test(email.value);
-  let passwordans = passRegex.test(password.value);
-
-  if (!emailans) {
-    document.querySelector("#emailError").textContent = "Email is incorrect";
-    document.querySelector("#emailError").style.display = "initial";
-    isValid = false;
-  }
-
-  if (!passwordans) {
-    document.querySelector("#passwordError").textContent =
-      "Password is incorrect";
-    document.querySelector("#passwordError").style.display = "initial";
-    isValid = false;
-  }
-
-  if (isValid) {
-    document.querySelector("#resultMsg").textContent = "Everything is Correct";
-    document.querySelector("body").style.background = "yellow";
-  }
-})
+document.querySelector("body").append(h1)

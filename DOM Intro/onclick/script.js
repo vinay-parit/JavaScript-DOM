@@ -1,17 +1,17 @@
-// let btn = document.querySelector("#btn")
-// let inp = document.querySelector("input")
+let btn = document.querySelector("#btn")
+let inp = document.querySelector("input")
 
-// btn.addEventListener("click", function(){
-// inp.click()
-// })
+btn.addEventListener("click", function(){
+inp.click()
+})
 
-// inp.addEventListener("change", function(det){
-// // console.log(det.target.files[0].name);
-// let name = det.target.files[0].name;
-// if(name){
-// btn.textContent = name;
-// }
-// })
+inp.addEventListener("change", function(det){
+console.log(det.target.files[0].name);
+let name = det.target.files[0].name;
+if(name){
+btn.textContent = name;
+}
+})
 
 
 
