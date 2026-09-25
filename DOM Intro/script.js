@@ -27,9 +27,14 @@
 //   h1.classList.toggle("abc")
 // });
 
-let sel = document.querySelector("select");
-let device = document.querySelector("#device")
+let h1 = document.querySelector("h1");
 
-sel.addEventListener("change", function(dets){
-  device.textContent = `${dets.target.value} Device Selected!!`
-})
+window.addEventListener("keydown", function (dets) {
+  // console.log(dets.key)
+
+  if (dets.key === " ") {
+    h1.textContent = "SPC";
+  } else {
+    h1.textContent = dets.key;
+  }
+});
