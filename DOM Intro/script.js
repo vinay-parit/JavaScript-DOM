@@ -27,14 +27,16 @@
 //   h1.classList.toggle("abc")
 // });
 
-let h1 = document.querySelector("h1");
+let btn = document.querySelector("#btn");
+let fileinp = document.querySelector("#inp")
 
-window.addEventListener("keydown", function (dets) {
-  // console.log(dets.key)
+btn.addEventListener("click", function(){
+  fileinp.click()
+})
 
-  if (dets.key === " ") {
-    h1.textContent = "SPC";
-  } else {
-    h1.textContent = dets.key;
-  }
-});
+fileinp.addEventListener("change", function(dets){
+  let file = dets.target.files[0]
+ btn.textContent = file.name
+ 
+  
+})
