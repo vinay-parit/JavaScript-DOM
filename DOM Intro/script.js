@@ -9,15 +9,27 @@
 
 // a.removeAttribute("href")
 
-
 // let h1 = document.createElement("h1");
 // h1.textContent = "Hi from vinay"
 
 // document.querySelector("body").append(h1)
 
-let lis = document.querySelectorAll("li")
+// let lis = document.querySelectorAll("li")
 
-lis.forEach(val => {
-    console.log(val.textContent);
-    
-});
+// lis.forEach(val => {
+//     console.log(val.textContent);
+
+// });
+
+// let h1 = document.querySelector("h1");
+
+// h1.addEventListener("click", function () {
+//   h1.classList.toggle("abc")
+// });
+
+let inp = document.querySelector("input");
+
+inp.addEventListener("input", function(){
+  console.log("typed")
+  
+})
