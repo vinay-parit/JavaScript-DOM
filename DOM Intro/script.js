@@ -29,7 +29,9 @@
 
 let inp = document.querySelector("input");
 
-inp.addEventListener("input", function(){
-  console.log("typed")
-  
+inp.addEventListener("input", function(val){
+  if(val.data !== null){
+    console.log(val.data);
+    
+  }
 })
