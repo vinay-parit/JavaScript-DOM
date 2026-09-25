@@ -27,11 +27,9 @@
 //   h1.classList.toggle("abc")
 // });
 
-let inp = document.querySelector("input");
+let sel = document.querySelector("select");
+let device = document.querySelector("#device")
 
-inp.addEventListener("input", function(val){
-  if(val.data !== null){
-    console.log(val.data);
-    
-  }
+sel.addEventListener("change", function(dets){
+  device.textContent = `${dets.target.value} Device Selected!!`
 })
