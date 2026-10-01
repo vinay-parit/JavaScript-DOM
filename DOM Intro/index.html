@@ -11,47 +11,37 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
       }
 
       html, body{
         width: 100%;
         height: 100%;
-        background-color: #222;
+        background-color: #444242;
       }
 
-      main{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
+      body{
+        overflow: hidden;
+        position: relative;
       }
 
-      input{
-        display: none;
+      #abcd{
+        transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: crimson;
       }
 
-      #btn{
-        padding: 10px 15px;
-        background-color: #d1c561;
-        border-radius: 10px;
-        cursor: pointer;
-      }
+    
+
+
     </style>
 
   </head>
   <body>
-    
-    <main>
-      <input type="file" id="inp">
 
-      <div id="btn">
-        Upload File
-      </div>
-    </main>
-
+    <div id="abcd"></div>
 
     <script src="script.js"></script>
   </body>
