@@ -114,27 +114,33 @@
 //    - Sumo (101–200 km): ₹600 + ₹8/km (above 100) + ₹300 driver fee
 //    - Sumo (> 200 km): ₹12/km + ₹500 driver fee
 
-let car = prompt("Select your car");
-let range = Number(prompt("Enter the kilometer"));
-let total;
+// let car = prompt("Select your car");
+// let range = Number(prompt("Enter the kilometer"));
+// let total;
 
-if (car === "maruti") {
-  if (range <= 100) {
-    total = 800 + 100;
-  } else if (range <= 200) {
-    total = 800 + (range - 100) * 10 + 300;
-  } else {
-    total = range * 15 + 500;
-  }
-  console.log(total)
+// if (car === "maruti") {
+//   if (range <= 100) {
+//     total = 800 + 100;
+//   } else if (range <= 200) {
+//     total = 800 + (range - 100) * 10 + 300;
+//   } else {
+//     total = range * 15 + 500;
+//   }
+//   console.log(total)
   
-} else if (car === "sumo") {
-  if (range <= 100) {
-    total = 600 + 100;
-  } else if (range <= 200) {
-    total = 600 + (range - 100) * 8 + 300;
-  } else{
-    total = range * 12 + 500;
-  }
-  console.log(total);
-}
+// } else if (car === "sumo") {
+//   if (range <= 100) {
+//     total = 600 + 100;
+//   } else if (range <= 200) {
+//     total = 600 + (range - 100) * 8 + 300;
+//   } else{
+//     total = range * 12 + 500;
+//   }
+//   console.log(total);
+// }
+
+// let ul = document.querySelector("ul")
+
+// ul.addEventListener("click", function(dets){
+//   dets.target.classList.toggle("lt")
+// })
