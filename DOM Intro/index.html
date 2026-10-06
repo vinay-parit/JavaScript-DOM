@@ -1,38 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email & Password Validator</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+  <title>Download Progress</title>
 
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        background-color: #444242;
-      }
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      body {
-        overflow: hidden;
-        position: relative;
-      }
+<body>
 
-     
-    </style>
-  </head>
-  <body>
-    
-    <input type="text" placeholder="write anything here">
-    <h1>Total Charecter <span>20</span></h1>
+  <div class="download-card">
 
-    <script src="script.js"></script>
-  </body>
+    <div class="download-status">
+      Downloading...
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <div class="download-percentage">
+      0%
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
 </html>

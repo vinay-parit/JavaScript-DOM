@@ -127,7 +127,7 @@
 //     total = range * 15 + 500;
 //   }
 //   console.log(total)
-  
+
 // } else if (car === "sumo") {
 //   if (range <= 100) {
 //     total = 600 + 100;
@@ -148,9 +148,9 @@
 // let inp = document.querySelector("input")
 // let span = document.querySelector("span")
 
-// inp.addEventListener("input", function(dets){  
+// inp.addEventListener("input", function(dets){
 //   let count = 20
-//   span.textContent = count - inp.value.length 
+//   span.textContent = count - inp.value.length
 
 //     if(inp.value.length > 20){
 //       span.style.color = "red"
@@ -159,3 +159,56 @@
 //       span.style.color = "black"
 //     }
 // })
+
+// let form = document.querySelector("form");
+// let email = document.querySelector("#email");
+// let password = document.querySelector("#password");
+
+// form.addEventListener("submit", function (dets) {
+//   dets.preventDefault();
+
+//   document.querySelector("#emailError").textContent = " "; 
+//   document.querySelector("#passwordError").textContent = " "; 
+
+//   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+//   const passwordRegex =
+//     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/;
+
+//   let emailans = emailRegex.test(email.value);
+//   let passans = passwordRegex.test(password.value)
+
+//   let isvalid = true
+
+//   if(!emailans){
+//     document.querySelector("#emailError").textContent = "Invalid Email" 
+//     isvalid = false
+//   }
+
+//   if(!passans){
+//     document.querySelector("#passwordError").textContent = "Invalid Password"; 
+//     isvalid = false
+//   }
+
+//   if(isvalid){
+    
+//     document.querySelector("#successMessage").textContent =
+//       "Everything is Correct";
+//   }
+
+// });
+
+// let count = 0
+// let Progress = document.querySelector(".progress-fill");
+// let perc = document.querySelector(".download-percentage");
+
+// let setint = setInterval(function(){
+//   if (count<=99){
+//     count++;
+//     Progress.style.width = `${count}%`
+//     perc.textContent = `${count}%`
+//   }
+//   else{
+//     document.querySelector(".download-status").textContent = "Downloaded"
+//     clearInterval(setint)
+//   }
+// },1000/100)
